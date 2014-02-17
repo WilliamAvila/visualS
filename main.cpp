@@ -9,6 +9,7 @@
 #include <Baraja.h>
 #include <qpixmap.h>
 #include <qlabel.h>
+#include <mylabel.h>
 
 using namespace std;
 
@@ -16,30 +17,26 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
+    w.setWindowTitle("Solitaire");
     w.show();
-    Game *game=new Game();
-
-
-
 
     Baraja *bar=new Baraja();
     bar->InitBaraja();
+
     bar->ImprimirBaraja();
-    bar->ImprimirBaraja();
 
-  /* for(int i=0;i<52;i++){
 
-    var[i] =rand()%52;
 
-    cout<<var[i]<<endl;
-    }*/
-   // game->llenarEscalera();
+
 
     w.Imprimir();
-    cout<<bar->cartas.recuperar(0)->carta->getColor()<<endl;
 
 
- //game->llenarEscalera();
+
+
+
+
+
 
     return a.exec();
 }

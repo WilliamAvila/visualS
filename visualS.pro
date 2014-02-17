@@ -18,14 +18,18 @@ SOURCES += main.cpp\
     Game.cpp \
     Baraja.cpp \
     Nodo.cpp \
-    Lista.cpp
+    Lista.cpp \
+    mylabel.cpp \
+    my_qlabel.cpp
 
 HEADERS  += mainwindow.h \
     Card.h \
     Game.h \
     Baraja.h \
     Nodo.h \
-    Lista.h
+    Lista.h \
+    mylabel.h \
+    my_qlabel.h
 
 FORMS    += mainwindow.ui
 

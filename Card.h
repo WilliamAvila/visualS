@@ -5,8 +5,10 @@
 #include <qpixmap.h>
 #include <qlabel.h>
 #include <qwidget.h>
+#include <mylabel.h>
+#include <my_qlabel.h>
 using namespace std;
-class Card
+class Card : public QLabel
 {
 public:
     Card();
@@ -18,8 +20,11 @@ public:
     bool is_touched;
     bool is_visible;
     QPixmap img;
-    QLabel *lbl;
+    my_Qlabel *lbl;
 
+    int x,y;
+
+    Card getCarta();
 
     void setNum(int num);
     void setType(string type);
@@ -31,6 +36,12 @@ public:
     int numero;
     string type;
     string color;
+
+
+
+
+
+
 };
 
 

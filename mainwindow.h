@@ -9,7 +9,10 @@
 #include "Card.h"
 #include "Game.h"
 #include <time.h>
+#include "mylabel.h"
 #include <stdlib.h>
+#include <my_qlabel.h>
+
 using namespace std;
 namespace Ui {
 class MainWindow;
@@ -23,9 +26,19 @@ public:
     explicit MainWindow(QWidget *parent = 0);
      void Imprimir();
     ~MainWindow();
+     my_Qlabel *mql;
+     Game *gm;
+     Card *ultima;
+
 
 private:
     Ui::MainWindow *ui;
+protected:
+     void mousePressEvent(QMouseEvent *ev);
+
+private slots:
+    void Mouse_Pressed();
+
 
 };
 

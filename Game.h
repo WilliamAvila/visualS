@@ -10,6 +10,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <qwidget.h>
+#include <QMouseEvent>
 class Game
 {
 public:
@@ -29,6 +30,9 @@ public:
     void imprimirCartasOrdenadas(QWidget *parent = 0);
 
     void sinrepetir();
+
+
+
 
 
 };

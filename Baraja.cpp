@@ -44,6 +44,8 @@ void Baraja::InitBaraja(){
 }
 
 void Baraja::InitCardImages(){
+
+
     cartas.recuperar(0)->carta->img= QPixmap(":/Cards/CAredDiamond.png");
     cartas.recuperar(1)->carta->img= QPixmap(":/Cards/C2redDiamond.png");
     cartas.recuperar(2)->carta->img= QPixmap(":/Cards/C3redDiamond.png");
